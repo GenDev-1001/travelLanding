@@ -639,6 +639,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	transform: translateY(50%);
+	margin-top: -70px;
 }
 
 .subscribe-form__descr {
@@ -993,9 +994,17 @@ body {
 		width: 100%;
 		padding: 24px;
 	}
+
+	.subscribe-form__title {
+		width: 320px;
+	}
 }
 
 @media (max-width: 680px) {
+	.container {
+		padding: 0 5px;
+	}
+
 	.burger {
 		display: flex;
 	}
@@ -1113,6 +1122,10 @@ body {
 		justify-content: center;
 		row-gap: 35px;
 	}
+
+	.footer {
+		padding: 120px 0px 20px;
+	}
 }
 
 @media (max-width: 490px) {
@@ -1130,8 +1143,13 @@ body {
 		font-size: 11px;
 	}
 
+	.big-cards {
+		align-items: center;
+	}
+
 	.big-card {
-		height: 370px;
+		height: 330px;
+		width: 290px;
 	}
 }
 
