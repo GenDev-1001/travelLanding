@@ -10,7 +10,7 @@ burger.addEventListener("click", clickBurgerHandle);
 
 const swiper = new Swiper(".reviews__cards", {
 	slidesPerView: 1,
-	spaceBetween: 10,
+	spaceBetween: 0,
 	breakpoints: {
 		600: {
 			slidesPerView: 2,
