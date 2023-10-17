@@ -1081,6 +1081,10 @@ body {
 		width: 420px;
 	}
 
+	.reviews__cards {
+		padding: 10px 0px 30px 0px;
+	}
+
 	.subscribe-form__form {
 		flex-direction: column;
 		row-gap: 10px;
