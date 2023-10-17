@@ -550,6 +550,7 @@ body {
 
 .reviews__cards {
 	display: flex;
+	padding: 0px 15px 30px 5px;
 }
 
 .reviews__card {
@@ -1162,9 +1163,9 @@ body {
 		font-size: 12px;
 	}
 
-	.footer__inner{
+	.footer__inner {
 		flex-direction: column;
-    align-items: center;
+		align-items: center;
 		row-gap: 20px;
 		text-align: center;
 	}
