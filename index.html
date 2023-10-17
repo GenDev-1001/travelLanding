@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="header__wrapper">
+			<div class="header__inner">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a href="#!" class="menu__list-link link--airplane">Find Flight</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#!" class="menu__list-link link--bed">Find Stays</a>
+						</li>
+					</ul>
+					<div class="burger">
+						<span></span>
+						<span></span>
+					</div>
+				</nav>
+				<div class="logo">
+					<a href="#!" class="logo-link">
+						<img class="logo-img" src="./images/logo.svg" alt="logo">
+					</a>
+				</div>
+				<div class="header-btns">
+					<bottom class="header-btns__login">Login</bottom>
+					<bottom class="header-btns__regedit">Sign up</bottom>
+				</div>
+			</div>
+
+			<div class="top">
+				<p class="top__content-subtitle">
+					Helping Others
+				</p>
+				<h1 class="top__content-title">
+					Live & Travel
+				</h1>
+				<p class="top__content-text">
+					Special offers to suit your plan
+				</p>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="container">
+			<form class="form">
+				<div class="form__header">
+					<input class="form__input-radio" type="radio" id="choose1" name="choose" value="flights" checked />
+					<label for="choose1" class="form__header-label form__header--one">Flights</label>
+					<span class="form__header-line"></span>
+					<input class="form__input-radio" type="radio" id="choose2" name="choose" value="stays" />
+					<label for="choose2" class="form__header-label form__header--two">Stays</label>
+				</div>
+				<div class="form__content">
+					<div class="form__content-field field--from">
+						<label class="form__content-label" for="form">From - To</label>
+						<input id="form" type="text" class="form__content-input" placeholder="Lahore - Karachi">
+					</div>
+					<div class="form__content-field field--trip">
+						<label class="form__content-label" for="trip">Trip</label>
+						<input id="trip" type="text" class="form__content-input" placeholder="Return">
+					</div>
+					<div class="form__content-field field--depart">
+						<label class="form__content-label" for="depart">Depart - Return</label>
+						<input id="depart" type="text" class="form__content-input" placeholder="07 Nov 22 - 13 Nov 22">
+					</div>
+					<div class="form__content-field field--passenger">
+						<label class="form__content-label" for="passenger">Passenger - Class</label>
+						<input id="passenger" type="text" class="form__content-input"
+							placeholder="1 Passenger, Economy">
+					</div>
+				</div>
+				<div class="form__footer">
+					<button class="form__footer-button btn--add">+ Add Promo Code</button>
+					<button class="form__footer-button btn--show">Show Filghts</button>
+				</div>
+			</form>
+
+			<section class="plan">
+				<div class="plan__header header--top">
+					<div class="plan__header-left">
+						<h2 class="plan__header-title header--title">Plan your perfect trip</h2>
+						<p class="plan__header-text header--text">Search Flights & Places Hire to our most popular
+							destinations</p>
+					</div>
+					<div class="plan__header-right">
+						<button class="plan__header-btn header--btn">See more places</button>
+					</div>
+				</div>
+
+				<div class="plan__cards">
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-1.jpg" alt="card image 1">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Istanbul, Turkey</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-2.jpg" alt="card image 2">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Sydney, Australia</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-3.jpg" alt="card image 3">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Baku, Azerbaijan</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-4.jpg" alt="card image 4">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Malé, Maldives</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-5.jpg" alt="card image 5">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Paris, France</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-6.jpg" alt="card image 6">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">New York, US</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-7.jpg" alt="card image 7">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">London, UK</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-8.jpg" alt="card image 8">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Tokyo, Japan</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+
+					<div class="plan__card">
+						<img class="plan__card-img" src="./images/cards/card-9.jpg" alt="card image 9">
+						<div class="plan__card-descr">
+							<h6 class="plan__card-title">Dubai, UAE</h6>
+							<p class="plan__card-text">Flights • Hotels • Resorts</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="big-cards">
+					<div class="big-card card--1">
+						<h5 class="big-card__title">Flights</h5>
+						<p class="big-card__text">Search Flights & Places Hire to our most popular destinations</p>
+						<button class="big-card__btn">Show Filghts</button>
+					</div>
+					<div class="big-card card--2">
+						<h5 class="big-card__title">Hotels</h5>
+						<p class="big-card__text">Search hotels & Places Hire to our most popular destinations</p>
+						<button class="big-card__btn">Show Hotels</button>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="reviews ">
+				<div class="reviews__header header--top">
+					<div class="reviews__header-left">
+						<h2 class="reviews__header-title header--title">Reviews</h2>
+						<p class="reviews__header-text header--text">What people says about Golobe facilities</p>
+					</div>
+					<div class="reviews__header-right">
+						<button class="reviews__header-btn header--btn">See All</button>
+					</div>
+				</div>
+
+				<div class="reviews__cards container-right">
+
+					<div class="swiper-wrapper reviews__cards-wrapper">
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<h6 class="reviews__card-title">“A real sense of community, nurtured”</h6>
+								<p class="reviews__card-text">Really appreciate the help and support from the staff
+									during
+									these
+									tough times. Shoutout to Katie for...
+								</p>
+								<span class="reviews__card-more">View more</span>
+								<div class="reviews__card-raiting">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+								</div>
+								<div class="reviews__card-name">Olga</div>
+								<div class="reviews__card-company">Weave Studios – Kai Tak</div>
+								<div class="reviews__card-google">
+									<img src="./images/google-image.svg" alt="google image"
+										class="reviews__card-google__img">
+								</div>
+								<div class="reviews__card-picture">
+									<img src="./images/review-1.jpg" alt="review one" class="reviews__card-img">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<h6 class="reviews__card-title">“The facilities are superb. Clean, slick, bright.”</h6>
+								<p class="reviews__card-text">“A real sense of community, nurtured”Really appreciate the
+									help
+									and support from the staff...
+								</p>
+								<span class="reviews__card-more">View more</span>
+								<div class="reviews__card-raiting">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+								</div>
+								<div class="reviews__card-name">Thomas</div>
+								<div class="reviews__card-company">Weave Studios – Olympic</div>
+								<div class="reviews__card-google">
+									<img src="./images/google-image.svg" alt="google image"
+										class="reviews__card-google__img">
+								</div>
+								<div class="reviews__card-picture">
+									<img src="./images/review-2.jpg" alt="review two" class="reviews__card-img">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="reviews__card ">
+								<h6 class="reviews__card-title">“A real sense of community, nurtured”</h6>
+								<p class="reviews__card-text">Really appreciate the help and support from the staff
+									during
+									these
+									tough times. Shoutout to Katie for...
+								</p>
+								<span class="reviews__card-more">View more</span>
+								<div class="reviews__card-raiting">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+								</div>
+								<div class="reviews__card-name">Eliot</div>
+								<div class="reviews__card-company">Weave Studios – Kai Tak</div>
+								<div class="reviews__card-google">
+									<img src="./images/google-image.svg" alt="google image"
+										class="reviews__card-google__img">
+								</div>
+								<div class="reviews__card-picture">
+									<img src="./images/review-3.jpg" alt="review three" class="reviews__card-img">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<h6 class="reviews__card-title">“A real sense of community, nurtured”</h6>
+								<p class="reviews__card-text">Really appreciate the help and support from the staff
+									during
+									these
+									tough times. Shoutout to Katie for...
+								</p>
+								<span class="reviews__card-more">View more</span>
+								<div class="reviews__card-raiting">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+								</div>
+								<div class="reviews__card-name">Olga</div>
+								<div class="reviews__card-company">Weave Studios – Kai Tak</div>
+								<div class="reviews__card-google">
+									<img src="./images/google-image.svg" alt="google image"
+										class="reviews__card-google__img">
+								</div>
+								<div class="reviews__card-picture">
+									<img src="./images/review-1.jpg" alt="review one" class="reviews__card-img">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<h6 class="reviews__card-title">“The facilities are superb. Clean, slick, bright.”</h6>
+								<p class="reviews__card-text">“A real sense of community, nurtured”Really appreciate the
+									help
+									and support from the staff...
+								</p>
+								<span class="reviews__card-more">View more</span>
+								<div class="reviews__card-raiting">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+								</div>
+								<div class="reviews__card-name">Thomas</div>
+								<div class="reviews__card-company">Weave Studios – Olympic</div>
+								<div class="reviews__card-google">
+									<img src="./images/google-image.svg" alt="google image"
+										class="reviews__card-google__img">
+								</div>
+								<div class="reviews__card-picture">
+									<img src="./images/review-2.jpg" alt="review two" class="reviews__card-img">
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="reviews__card">
+								<h6 class="reviews__card-title">“A real sense of community, nurtured”</h6>
+								<p class="reviews__card-text">Really appreciate the help and support from the staff
+									during
+									these
+									tough times. Shoutout to Katie for...
+								</p>
+								<span class="reviews__card-more">View more</span>
+								<div class="reviews__card-raiting">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+									<img src="./images/star-icon.svg" alt="star icon" class="reviews__card-star">
+								</div>
+								<div class="reviews__card-name">Eliot</div>
+								<div class="reviews__card-company">Weave Studios – Kai Tak</div>
+								<div class="reviews__card-google">
+									<img src="./images/google-image.svg" alt="google image"
+										class="reviews__card-google__img">
+								</div>
+								<div class="reviews__card-picture">
+									<img src="./images/review-3.jpg" alt="review three" class="reviews__card-img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+
+			<section class="subscribe-form">
+				<div class="subscribe-form__descr">
+					<h2 class="subscribe-form__title">Subscribe Newsletter</h2>
+					<h5 class="subscribe-form__subtitle">The Travel</h5>
+					<p class="subscribe-form__text">Get inspired! Receive travel discounts, tips and behind the scenes
+						stories.</p>
+					<div class="subscribe-form__form">
+						<input type="text" class="subscribe-form__input" placeholder="Your email address">
+						<button class="subscribe-form__button">Subscribe</button>
+					</div>
+				</div>
+				<div class="subscribe-form__picture">
+					<img class="subscribe-form__image" src="./images/mail-box.svg" alt="mail box image">
+				</div>
+			</section>
+		</div>
+	</main>
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="footer__inner">
+				<div class="footer__socials">
+					<div class="footer__socials-logo">
+						<img class="footer__socials-img" src="./images/logo-black.svg" alt="logo black">
+						<ul class="footer__socials-list">
+							<li class="footer-list__item">
+								<a href="#!" class="footer-list__link">
+									<img src="./images/facebook-icon.svg" alt="facebook icon" class="footer-list__img">
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#!" class="footer-list__link">
+									<img src="./images/twitter-icon.svg" alt="twitter icon" class="footer-list__img">
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#!" class="footer-list__link">
+									<img src="./images/youtube-icon.svg" alt="youtube icon" class="footer-list__img">
+								</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="#!" class="footer-list__link">
+									<img src="./images/instagram-icon.svg" alt="instagram icon"
+										class="footer-list__img">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer__menu">
+					<h4 class="footer__menu-title">Our Destinations</h4>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Canada</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Alaksa</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">France</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Iceland</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__menu">
+					<h4 class="footer__menu-title">Our Activities</h4>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Northern Lights</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Cruising & sailing</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Multi-activities</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Kayaing</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__menu">
+					<h4 class="footer__menu-title">Travel Blogs</h4>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Bali Travel Guide</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Sri Lanks Travel Guide</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Peru Travel Guide</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Bali Travel Guide</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__menu">
+					<h4 class="footer__menu-title">About Us</h4>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Our Story</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Work with us</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="footer__menu">
+					<h4 class="footer__menu-title">Contact Us</h4>
+					<ul class="footer__menu-list">
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Our Story</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="#!" class="footer__menu-link">Work with us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="./js/main.js"></script>
+
+</body>
+
+</html>
